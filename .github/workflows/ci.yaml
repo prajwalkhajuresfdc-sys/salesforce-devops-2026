@@ -1,0 +1,13 @@
+name: CI Pipeline
+run-name : "CI Pipeline is running"
+
+on:
+  push:
+jobs:
+  build-and-validate:
+    name : Build & Validate
+    runs-on : ubuntu-latest
+
+    steps:
+      - name : Print
+        run : echo "this is my firsy pipeline"
